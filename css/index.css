@@ -1,0 +1,414 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-18 08:57:44
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-20 14:31:47
+*/
+/* 通用选择器清除默认样式 */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background-color: #f5f5f5;
+	font-size: 14px;
+}
+.first{
+	width: 100%;
+	height: 13.77rem;
+	background-image: url('../img/screen.png'),linear-gradient(#3cbfff,#46e4ff);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% auto,cover;
+	overflow: hidden;
+
+}
+.first .pos{
+	width: 100%;
+	height: 1.6rem;
+	color: #ffffff;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 1.6rem;
+	font-weight: 500;
+}
+.first .air{
+	width: 2.1rem;
+	height: 1.26rem;
+	background: #f1ab62;
+	border-radius: 0.15rem;
+	margin-left: 0.27rem;
+}
+.first .air h4{
+	font-size: 0.23rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 0.6rem;
+	/* 默认会加粗 */
+	font-weight: 400;
+}
+.first .air h5{
+	font-size: 0.34rem;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 400;
+}
+.first .title1{
+	width: 100%;
+	height: 1.3rem;
+	font-size: 1.3rem;
+	color: #fff;
+	margin: 0.5rem auto auto auto;
+	padding-left: 4.93rem;
+}
+.first .title2{
+	width: 100%;
+	height: 0.58rem;
+	font-size: 0.5rem;
+	color: #fff;
+	margin-top: 0.44rem;
+	padding-left: 5.11rem;
+}
+.first .title3{
+	width: 100%;
+	height: 0.36rem;
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.35rem;
+
+}
+.first .title4{
+	width: 100%;
+	height: 0.4rem;
+	font-size: 0.4rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 1.3rem;
+}
+.second{
+	width: 100%;
+	height: 2.88rem;
+	background: #fff;
+	border-bottom: 1px solid #e4e4e4;
+	font-size: 0.34rem;
+}
+.second .today{
+	width: 5.4rem;
+	height: 1.47rem;
+	border-right: 0.03rem solid #e4e4e4;
+	float: left;
+	margin-top: 0.72rem;
+}
+.second .tomorrow{
+	width: 5.37rem;
+	height: 1.47rem;
+	float: left;
+	margin-top: 0.72rem;
+}
+.second .today .top{
+	width: 100%;
+	height: 0.6rem;
+}
+.second .today .top .todayText{
+	width: 0.95rem;
+	height: 100%;
+	line-height: 0.6rem; 
+	float: left;
+	margin-left: 0.56rem;
+	color: black;
+}
+.second .today .top .tem{
+	width: 2.7rem;
+	height: 100%;
+	line-height: 0.6rem; 
+	float: right;
+	margin-right: 0.48rem;
+	color: black;
+	text-align: right;
+}
+.second .today .botom{
+	width: 100%;
+	height: 1.41rem;
+	background: yellow;
+}
+.second .today .bottom .con{
+	float: left;
+	width: 1.9rem;
+	height: 100%;
+	line-height: 1.2rem;
+	margin-left: 0.56rem;
+	color: black;
+}
+.second .today .bottom .conpic{
+	float: right;
+	width: 0.7rem;
+	height: 0.7rem;
+	margin-right: 0.53rem;
+	margin-top: 0.25rem;
+	background-image: url('../img/0.png');
+	background-size: cover;
+	background-position: center;
+}
+.second .tomorrow .top{
+	width: 100%;
+	height: 0.6rem;
+}
+.second .tomorrow .top .tomorrowText{
+	width: 0.95rem;
+	height: 100%;
+	line-height: 0.6rem; 
+	float: left;
+	margin-left: 0.56rem;
+	color: black;
+}
+.second .tomorrow .top .tem{
+	width: 2.65rem;
+	height: 100%;
+	line-height: 0.6rem; 
+	float: right;
+	margin-right: 0.59rem;
+	color: black;
+	text-align: right;
+}
+.second .tomorrow .botom{
+	width: 100%;
+	height: 1.41rem;
+	background: yellow;
+}
+.second .tomorrow .bottom .con{
+	float: left;
+	width: 1.9rem;
+	height: 100%;
+	line-height: 1.2rem;
+	margin-left: 0.56rem;
+	color: black;
+}
+.second .tomorrow .bottom .conpic{
+	float: right;
+	width: 0.7rem;
+	height: 0.7rem;
+	margin-right: 0.53rem;
+	margin-top: 0.25rem;
+	background-image: url('../img/0.png');
+	background-size: cover;
+	background-position: center;
+}
+.third{
+	width: 100%;
+	/* 需减去内边距，才为正常要求大小 */
+	height: 2.08rem;
+	background: #fff;
+	margin-top: 0.27rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	padding: 0.88rem 0 0.88rem 0;
+	/* 允许出现x横向滚动条 yhidden*/
+	overflow-x: auto;
+}
+/* 不显示内核滚动条宽度设为0 */
+.third::-webkit-scrollbar{
+	width: 0;
+}
+.third .wrap{
+	width: 100%;
+	/* 弹性盒子布局  用浮动也可实现 */
+	display: flex;
+}
+.third .wrap .box{
+	width: 1.95rem;
+	height: 100%;
+	/* 自动缩小变大 */
+	flex-shrink: 0;
+}
+.third .wrap .box .time{
+	font-size: 0.24rem;
+	color: #999;
+	/* 默认父级宽度 */
+	text-align: center;
+}
+.third .wrap .box .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	margin: 0.57rem auto 0.5rem auto;
+	background: url('../img/1.png');
+	background-position: center;
+	background-size: 100% auto,cover;
+}
+.third .wrap .box .timeTem{
+	font-size: 0.26rem;
+	color: #333;
+	text-align: center;
+}
+.forth{
+	width: 100%;
+	/* 需减去内边距，才为正常要求大小 */
+	height: 9.0rem;
+	background: #fff;
+	margin-top: 0.27rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	padding: 0.88rem 0 0.88rem 0;
+	overflow-x: auto;
+}
+.forth .wrap{
+	width: 100%;
+	/* 弹性盒子布局  用浮动也可实现 */
+	display: flex;
+}
+.forth .wrap .box2{
+	width: 1.86rem;
+	height: 100%;
+	/* 自动缩小变大 */
+	flex-shrink: 0;
+}
+.forth .wrap .box2 .time1{
+	font-size: 0.25rem;
+	color: #888888;
+	/* 默认父级宽度 */
+	text-align: center;
+	/* height: 100%; */
+}
+.forth .wrap .box2 .weather1{
+	height: 100%;
+	line-height: 1.2rem;
+	margin-left: 0.1rem;
+	color: #333333;
+	margin-top: 1rem;
+	font-size: 0.26rem;
+	text-align: center;
+}
+.forth .wrap .box2 .icon1{
+	width: 0.55rem;
+	height: 0.9rem;
+	margin: 0.39rem auto 0.5rem auto;
+	background: url('../img/1.png');
+	background-position: center;
+	background-size: 100% auto,cover;
+	background-repeat: no-repeat;
+}
+.forth .wrap .box2 .icon2{
+	width: 0.55rem;
+	height: 0.9rem;
+	margin: 0.39rem auto 0.5rem auto;
+	background: url('../img/0.png');
+	background-position: center;
+	background-size: 100% auto,cover;
+	background-repeat: no-repeat;
+}
+.forth .wrap .box2 .high{
+	font-size: 0.26rem;
+	color: #333;
+	text-align: center;
+}
+.forth .wrap .box2 .low{
+	font-size: 0.26rem;
+	color: #333;
+	text-align: center;
+	margin: 1rem auto 0.5rem auto;
+}
+.forth .wrap .box2 .cloud{
+	font-size: 0.26rem;
+	color: #888888;
+	text-align: center;
+	margin: 1.5rem auto 0.5rem auto;
+}
+.forth .wrap .box2 .degree{
+	font-size: 0.26rem;
+	color: #888888;
+	text-align: center;
+	margin: 0.35rem auto 0.5rem auto;
+}
+.city{
+	width: 100%;
+	height: 100%; 
+	background: #fff;
+	/* 从窗口左上角开始显示 */
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* 隐藏 */
+	/* display: none;  */
+	/* 允许y轴滚动条出现 */
+	overflow-y: auto;
+}
+.city::-webkit-scrollbar{
+	width: 0;
+}
+.city .search{
+	width: 100%;
+	height: 1.3rem;
+	border-bottom: 0.03rem solid #e4e4e4;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	/* 层级问题可设等级
+	z-index: 30; */
+}
+.city .search .searchBox{
+	width: 7.68rem;
+	height: 0.86rem;
+	border-radius: 0.43rem;
+	background: #f2f2f2;
+	border: none;
+	margin: 0.24rem 0 0 0.36rem;
+	padding-left: 0.93rem;
+	font-size: 0.32rem;
+	color: #868686;
+	float: left;
+
+}
+.city .search .button{
+	float: left;
+	font-size: 0.32rem;
+	color: #626262;
+	height: 0.86rem;
+	width: 1.83rem;
+	margin-top: 0.24rem;
+	line-height: 0.86rem;
+	text-align: center;
+}
+ .city .citys{
+ 	width: 100%;
+ 	/* 自动填满 */
+ 	overflow: hidden;
+ 	padding: 0.34rem;
+ 	/* 不计算内边距，直接是实际大小 */
+ 	box-sizing: border-box;
+ }
+ .city .citys .title{
+ 	width: 100%;
+ 	font-size: 0.36rem;
+ 	color: #444;
+ }
+ .city .citys .title1{
+ 	width: 100%;
+ 	font-size: 0.36rem;
+ 	color: #444;
+ 	margin-top: 1.2rem;
+ }
+ .city .citys .con{
+ 	width: 100%;
+ 	font-size: 0.36rem;
+ 	color: #444;
+ 	overflow: hidden;
+ 	margin-top: 0.4rem;
+ }
+ .city .citys .con .box{
+ 	width: 3.16rem;
+ 	height: 0.8rem;
+ 	border-radius: 0.4rem;
+ 	font-size: 0.3rem;
+ 	color: #4c4c4c;
+ 	text-align: center;
+ 	float: left;
+ 	line-height: 0.8rem;
+ 	margin-right: 0.3rem;
+ 	margin-bottom: 0.22rem;
+ 	background-color: #f2f2f2;
+ }
+ .city .citys .con .box:nth-child(3n){
+	margin-right: 0;
+ }
